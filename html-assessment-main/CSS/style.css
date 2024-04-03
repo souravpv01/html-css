@@ -1,0 +1,249 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap')
+
+
+;
+
+.header {
+    display: flex;
+    background-color: rgb(226, 112, 112);
+    height: 40px;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.outer-container{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    
+}
+.humburg{
+    object-fit: contain;
+    width: 30px;
+}
+.icon-image{
+    height: 30px;
+    width: 30px;
+}
+.option{
+    font-size: 19px;
+    font-weight: bold;
+}
+.session1{
+    display: flex;
+    height: 100vh; 
+}
+.left-session{
+    width: 50%; 
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 40px;    
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+.right-session {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.session1-content{
+width: 50%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+gap: 50px;
+padding: 60px;
+justify-content: center;
+box-sizing: border-box;
+background-image:linear-gradient(89.6deg, rgb(254, 255, 194) -0.1%, rgb(255, 210, 165) 37.7%, rgb(211, 140, 173) 101%);
+
+}
+.session1-image{
+width: 50%;
+height: 100vh;
+}
+img{
+    object-fit: contain;
+    height: 100%;
+}
+.session1-heading{
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: 7px;
+    font-family: "Reddit Mono", monospace;
+    
+}
+.lcontent{
+    font-size: 23px;
+}
+.button{
+    background-color: rgb(226, 112, 112);
+    height: 40px;
+    width: 140px;
+    color: white;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+}
+
+.session2{
+    display: flex;
+    height: 100vh;
+    background-image:linear-gradient(89.6deg, rgb(254, 255, 194) -0.1%, rgb(255, 210, 165) 37.7%, rgb(211, 140, 173) 101%);
+    gap: 40px;
+}
+
+.small-box{
+    background-color:rgb(226, 112, 112);
+    width: 520px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+}
+
+.peas{
+    height: 200px;
+    object-fit: fill;
+}
+.peas2{
+    height: 405px;
+    width: 250px;
+    object-fit: fill;
+}
+
+.pic1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+.pic2{
+    width: 250px;
+}
+.click{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .icon-image {
+        margin-top: 15px;
+        height: auto;
+        width: 100px;
+    }
+
+    .option {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .session1 {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0%;
+    justify-content: center;
+    box-sizing: border-box;
+
+    }
+
+    .session1-content,
+    .session1-image {
+        width: 100%;
+    }
+
+    .session1-content {
+        padding: 0%;
+    }
+
+    .session1-heading {
+        font-size: 28px;
+    }
+
+    .button {
+        height: 30px; 
+        width: 120px; 
+        font-size: 14px;
+    }
+
+    .session2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-session,.right-session {
+        width: 50%;
+    }
+
+    .small-box {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 0%;
+    }
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    .header {
+        gap: 5px;
+    }
+
+    .humburg {
+        width: 20px;
+        object-fit: contain;
+    }
+
+    .icon-image {
+        height: 10px;
+        width: 10px;
+    }
+
+    .option {
+        font-size: 11px;
+    }
+
+    .session1-heading {
+        font-size: 24px;
+    }
+
+    .lcontent {
+        font-size: 11px;
+    }
+
+    .button {
+        height: 25px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .peas {
+        height: 70px;
+    }
+
+    .peas2 {
+        height: 70px;
+    }
+}
